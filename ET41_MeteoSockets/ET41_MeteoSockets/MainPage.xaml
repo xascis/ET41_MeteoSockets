@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ET41_MeteoSockets"
+             x:Class="ET41_MeteoSockets.MainPage">
+    
+    <StackLayout>
+        <Label Text="Estación meteorológica" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button x:Name="RecuperaInfo" Text="Lee información" />
+        <Label x:Name="conexInfo" VerticalOptions="Start" HorizontalOptions="Center" />
+        <Label x:Name="infoMeteo" VerticalOptions="Start" HorizontalOptions="Center"/>
+        <AbsoluteLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="400" HeightRequest="400">
+            <Image AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   x:Name="rosaVientos"
+                   Source="{local:ImageResourceExtension ET41_MeteoSockets.Assets.rosa_vents.png}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Aspect="AspectFit"
+                   WidthRequest="400"
+                   HeightRequest="400"/>
+            <Image AbsoluteLayout.LayoutBounds="0,0,1,0.5" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   x:Name="manecilla"
+                   Source="{local:ImageResourceExtension ET41_MeteoSockets.Assets.manecilla.png}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Aspect="AspectFit"
+                   WidthRequest="400"
+                   HeightRequest="400"/>
+        </AbsoluteLayout>
+    </StackLayout>
+
+</ContentPage>
