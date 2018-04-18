@@ -19,7 +19,7 @@
                    Aspect="AspectFit"
                    WidthRequest="400"
                    HeightRequest="400"/>
-            <Image AbsoluteLayout.LayoutBounds="0,0,1,0.5" 
+            <Image AbsoluteLayout.LayoutBounds="0,0.1,1,0.5" 
                    AbsoluteLayout.LayoutFlags="All"
                    x:Name="manecilla"
                    Source="{local:ImageResourceExtension ET41_MeteoSockets.Assets.manecilla.png}"
